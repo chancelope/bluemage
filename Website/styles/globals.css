@@ -1,0 +1,22 @@
+/* Section styling */
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  section {
+    padding: 4rem;
+  }
+}
+
+/* Media query for even larger screens */
+@media (min-width: 1200px) {
+  section {
+    padding: 6rem;
+  }
+}
