@@ -1,0 +1,141 @@
+:root {
+    --deep-blue: #0052a3;
+    --electric-blue: #0077be;
+    --dark-bg: #121212;
+    --dark-surface: #1e1e1e;
+    --light-text: #e0e0e0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 5%;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.logo-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+nav {
+    margin-top: 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--light-text);
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--electric-blue);
+}
+
+section {
+    margin-bottom: 5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h1, h2 {
+    color: var(--electric-blue);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    text-align: center;
+}
+
+.project-showcase {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.project-logo {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea, button {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid var(--deep-blue);
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--dark-surface);
+    color: var(--light-text);
+}
+
+button {
+    background-color: var(--deep-blue);
+    color: var(--light-text);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--electric-blue);
+}
+
+footer {
+    background-color: var(--dark-surface);
+    color: var(--light-text);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
